@@ -1,0 +1,187 @@
+VAX Specific Notes
+******************
+This is a port of my Z88 Lander Retrochallenge Entry, which was
+originally written in the Summer of 2010, see 
+http://wickensonline.co.uk/rc2010sc for more details. This port was
+done for the 2020/04 Retrochallenge and sees the code extensively
+restructured to use SUB modules in separate source files together
+with a COMMON section to house the static/global variable RECORD
+structures which store game and lander state.
+
+There is a slight delay after a control key is pressed before it
+is actioned - initially I found this annoying but actually it makes
+it slightly more challenging and probably more realistic.
+
+If you want to build from source you will need BASIC installed. It
+has been tested on a SIMH VAX/VMS 7.3 simulator, but should also
+work on the Alpha and possibly Itanium versions of BASIC. The script
+build.com is all you should need to run to compile and link.
+
+$ @build
+$ run vaxlander28g
+
+I hope you enjoy this simple simulation. Original instructions
+follow.
+
+Mark Wickens, Windermere, The Lake District, UK
+04-MAY-2020
+
+Z88 Lander                                                                     
+**********                                                                     
+                                                                               
+You are the commander of the Lunar Excursion Module, your job is to            
+successfully land the LEM on the moon.                                         
+                                                                               
+Your display panel looks like this:                                            
+                                                                               
+ F=  35000.00  X= -3000.00  Y=  10000.00  ALT ^-75 VSI  -0                     
+DX=    500.00 DY=     0.00 BR=      0.00       .        .                      
+LA=     60.00 VT=     0.00 HT=      0.00       -50      -5                     
+                                               .       >.                      
+                                               -25      -10                    
+                                               .        .                      
+                                               -0       -15                    
+                                                                               
+The following information is displayed:                                        
+                                                                               
+ F: Descent Engine Fuel Remaining                                              
+ X: Distance down range from the landing site                                  
+ Y: Height above the lunar surface                                             
+DX: Horizontal speed (+VE is towards the landing site)                         
+DY: Vertical speed (-VE is descending towards the lunar surface)               
+BR: Burn rate of the descent engine, from 0 to 100%                            
+LA: Lunar attitude, measured in degrees. 0 is vertical.                        
+VT: Vertical thrust component                                                  
+HT: Horizontal thrust component                                                
+                                                                               
+The 'tapes' on the right-hand side show your Altitude (Y) when 75              
+metres or below and also your vertical speed (DY) when between 0 and           
+-15 metres/second. The pointer is a '>' when indicating an in-range            
+value, '^' when above the range and 'V' when below the range. The tapes        
+are primarily of use in the final phase of the landing.                        
+                                                                               
+Your mission starts high above the lunar surface in fast lunar orbit.          
+Your first job in the braking phase is to tilt the lander module so            
+that the engine faces into the direction of travel and fire the descent        
+engine to slow your horizontal speed. The module computer allows a             
+maximum tilt of 60 degrees from the vertical. As you tilt the lander           
+module and fire the descent engine the horizontal and vertical thrust          
+components are shown in the HT and VT fields respectively.                     
+                                                                               
+Once your horizontal speed slows you must transition the module into           
+the landing phase. Watch your horizontal and vertical speed as                 
+you descend to the surface. You must land with a horizontal (DX) and           
+vertical (DY) speed of less than 6.0. You must land within 1000 metres         
+of the landing site (-500 metres to +500 metres). Your mission ends            
+when you on the lunar surface and have shutdown the descent engine.            
+Good luck commander!                                                           
+                                                                               
+Controls                                                                       
+********                                                                       
+                                                                               
+[ : reduce descent engine thrust by 10%                                        
+] : increase descent engine thrust by 10%                                      
+; : reduce descent engine thrust by 2%                                         
+' : increase descent engine thrust by 2%                                       
+= : tilt lander module 10 degrees clockwise                                    
+- : tilt lander module 10 degress counter-clockwise                            
+1 : set descent engine thrust to 20%                                           
+2 : set descent engine thrust to 40%                                           
+3 : set descent engine thrust to 60%                                           
+4 : set descent engine thrust to 80%                                           
+5 : set descent engine thrust to 100%                                          
+C : set module attitude to -60 degrees                                         
+V : set module attitude to 0 degrees (vertical)                                
+B : set module attitude to +60 degrees                                         
+R : reset the simulation (start over)                                          
+P : pause the simulation (press P to resume)                                   
+Q : Quit                                                                       
+                                                                               
+Indicator Panel                                                                
+***************                                                                
+                                                                               
+Below the primary instruments is an indicator panel which is used to           
+display warning or alert information:                                          
+                                                                               
+FUEL - Flashes to indicate low fuel/out of fuel                                
+ASC - Indicates the Lunar Module is Ascending                                  
+RADAR - Indicates radar altimeter is active (below 1000 metres)                
+CONTACT - Indicates Lunar Modules is within 3 metres of the surface            
+ENGINE - Indicates descent engine is OFF                                       
+                                                                               
+Score                                                                          
+*****                                                                          
+                                                                               
+Your score is calculated by the 'smoothness' of your landing. This is          
+calculated as inversely proportional to your horizontal and vertical           
+speed at touchdown. Fuel remaining does not affect your score - your           
+descent stage will be left behind when you take off again! A good score        
+is 10, a very good score is 100, if you score about 100 consider               
+enrolling in NASA!                                                             
+                                                                               
+Implementation Notes                                                           
+********************                                                           
+                                                                               
+The simulation updates once every second. It makes use of the function         
+INKEY$ to read the keyboard - this can have a delay specified, however,        
+this is a maximum delay - if a key is pressed the delay is not                 
+honoured. So in order to keep the delay between simulation updates to          
+exactly one second (and stop key presses speeding up the simulation)           
+use is made of the pseudo variable 'TIME' which returns the current            
+time in 10ms increments, and can be reset by assignment. At the start          
+of the simulation 'tick' TIME is reset to 0. A loop at the end of the          
+simulation 'tick' ensures that exactly 1 second has elapsed, with the          
+INKEY$ delay set to 90% of 'tick' time. This ensures that keypresses           
+are not missed. Extensive use is made of the PRINT TAB(x,y) "STRING"           
+command that will print the STRING at the given (x,y) position on the          
+display.                                                                       
+                                                                               
+The variable assignment @%=&0102020A at the start of the program sets          
+the format of the real values displayed on the instrument panel to be          
+10 characters wide (0A) with two decimal places (last 02).                     
+                                                                               
+Credits                                                                        
+*******                                                                        
+                                                                               
+The code and documentation were written on a Z88 as part of the Summer         
+2010 retrochallenge. In addition to the Z88 the code should run                
+unmodified on a real BBC computer or under an emulator such as brandy.         
+See http://wickensonline.co.uk/rc2010sc for more information.                            
+                                                                               
+Tips                                                                           
+****                                                                           
+                                                                               
+1. At a Lunar Module angle of 60% and 100% burn rate the vertical              
+descent of the Lunar Module is kept constant.                                  
+                                                                               
+2. You will need to develop an 'instrument scan' technique to ensure           
+that you keep an eye on your fuel, position and speed.                         
+                                                                               
+3. There is no need to get the landing position exact - the lunar              
+orbiter mapping project has mapped out the 1km square as being suitable        
+for landing in.                                                                
+                                                                               
+4. During the braking phase, concentrate on slowing the horizontal             
+velocity to 50 metres/second, then worry about how far down range you          
+are.                                                                           
+                                                                               
+5. With the Lunar Module in the vertical orientation a thrust between          
+32% and 34% will keep the module at a static descent rate.                     
+                                                                               
+6. Lots of practice, and have goals rather than 'chasing the dials'.           
+                                                                               
+Footnote                                                                       
+********                                                                       
+                                                                               
+Neil Armstrong's heart rate rose to 150 beats/minute during the final          
+landing phase of Apollo 11. Manual control was required because the            
+landing site the guidance computer was directing them to was in/close          
+to a crater. FUEL was down to 60 seconds remaining on touchdown. If the        
+FUEL light is blinking and you're trying to land the lunar module              
+whilst being distracted right at the last minute (for example by a             
+French waitress attempting to extract an order) then you might get a           
+slight glimpse of the pressure the LM commander was under. Definitely          
+*not* a walk in the park!                                                      
+                                                                               
+
+

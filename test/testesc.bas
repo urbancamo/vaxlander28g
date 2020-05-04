@@ -1,0 +1,6 @@
+PROGRAM TESTESC
+
+PRINT ESC;"[2J"
+PRINT ESC;"[";FORMAT$(10,"##");";";FORMAT$(40,"##");"H";"Hello World!"
+END PROGRAM
+ 

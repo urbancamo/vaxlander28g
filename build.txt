@@ -1,0 +1,1097 @@
+Diagnostic on source line 77, listing line 77
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        SUB PROC_SIMLOOP
+........1 
+ 
+%BASIC-E-FOUND, 1:        found keyword SUB when expecting a valid statement
+ 
+Diagnostic on source line 80, listing line 80
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        REPEAT
+ 
+%BASIC-E-FOUND,           found end of statement when expecting one of:
+                                         "("
+                                         ","
+                                         "="
+                                         ":"
+                                         "::"
+%BASIC-E-EXPDECREQ,           explicit declaration of REPEAT required
+ 
+Diagnostic on source line 88, listing line 88
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            IF
+ 
+%BASIC-E-DELETE,           ignoring end of statement
+ 
+Diagnostic on source line 102, listing line 102
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        END SUB
+........1 
+ 
+%BASIC-E-FOUENDWIT, 1:        found end of SUB without matching SUB
+ 
+%BASIC-E-MISMATFOR,  missing NEXT for UNTIL at listing line 95
+Diagnostic on source line 110, listing line 110
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::vsi = 0	! Vertical Speed Indicator Position
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 111, listing line 111
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::pvsi = 3	! Previous VSI indicator
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 112, listing line 112
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::alt = 0 	! Altitude indicator
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 113, listing line 113
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::palt = 3 	! Previous altitude indicator
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 114, listing line 114
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::hpi = 0	! Horizontal position indicator
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 115, listing line 115
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::la = 60	! Lander angle (0=vertical)
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 116, listing line 116
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::br = 0		! Burn rate/%
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 117, listing line 117
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::f = 25000 	! Initial fuel/kg
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 118, listing line 118
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::x = -30000 	! Range to landing site
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 119, listing line 119
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::y = 10000	! Initial height/metres
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 120, listing line 120
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::dx = 500	! Initial horizontal velocity/ms
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 121, listing line 121
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::dy = 0 	! Initial vertical velocity/ms
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 122, listing line 122
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState:vertThrust = 0 	! Vertical thrust component
+.......................1 
+ 
+%BASIC-E-FOUND, 1:        found ":" when expecting one of:
+                                         "("
+                                         ","
+                                         "="
+                                         "::"
+ 
+Diagnostic on source line 123, listing line 123
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::horizThrust = 0 	! Horizontal thrust component
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 136, listing line 136
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        CALL PRINT_TAB(1, 0,"F="+F)
+................................1 
+ 
+%BASIC-E-ILLMODMIX, 1:        illegal mode mixing
+ 
+Diagnostic on source line 137, listing line 137
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        CALL PRINT_TAB(15, 0, "X="+X)
+..................................1 
+ 
+%BASIC-E-ILLMODMIX, 1:        illegal mode mixing
+ 
+Diagnostic on source line 138, listing line 138
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        CALL PRINT_TAB(29, 0, "Y="+Y)
+..................................1 
+ 
+%BASIC-E-ILLMODMIX, 1:        illegal mode mixing
+ 
+Diagnostic on source line 139, listing line 139
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        CALL PRINT_TAB(0, 1, "DX="+DX)
+..................................1 
+ 
+%BASIC-E-ILLMODMIX, 1:        illegal mode mixing
+ 
+Diagnostic on source line 140, listing line 140
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        CALL PRINT_TAB(14, 1, "DY="+DY)
+...................................1 
+ 
+%BASIC-E-ILLMODMIX, 1:        illegal mode mixing
+ 
+Diagnostic on source line 141, listing line 141
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        CALL PRINT_TAB(28, 1, "BR="+BR)
+...................................1 
+ 
+%BASIC-E-ILLMODMIX, 1:        illegal mode mixing
+ 
+Diagnostic on source line 142, listing line 142
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        CALL PRINT_TAB(0, 2, "LA="+LA)
+..................................1 
+ 
+%BASIC-E-ILLMODMIX, 1:        illegal mode mixing
+ 
+Diagnostic on source line 146, listing line 146
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::f < 3000 AND LanderState::st MOD 2 = 0
+...........1.........................2...............3 
+ 
+%BASIC-E-FOUND, 3:        found keyword MOD when expecting one of:
+                                         end of statement
+                                         GO
+                                         GOTO
+                                         THEN
+                                         "("
+                                         "::"
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 148, listing line 148
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            CALL PRINT_TAB(0, 3, "FUEL")
+ 
+%BASIC-E-ELSIMPCON,           ELSE appears in improper context, ignored
+ 
+Diagnostic on source line 151, listing line 151
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        END IF
+ 
+%BASIC-E-FOUENDWIT,           found end of IF without matching IF
+ 
+Diagnostic on source line 154, listing line 154
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::dy > 0
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 160, listing line 160
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::y < 1000
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 165, listing line 165
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::y < 3
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 170, listing line 170
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::y > 1000
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 175, listing line 175
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::br = 0 AND LanderState::f = 0
+...........1.......................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 180, listing line 180
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::x >= -500 AND LanderState::x <= 500
+...........1..........................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 190, listing line 190
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        END SUB
+ 
+%BASIC-E-MISENDFOR,           missing END IF for ELSE at listing line 156
+ 
+Diagnostic on source line 196, listing line 196
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::vsi = ( 0 - LanderState::dy ) * 6 / 15
+............1........................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 197, listing line 197
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::vsi <> LanderState::pvsi
+...........1...................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 199, listing line 199
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            CALL PROC_UPDTAPE(59, LanderState::vsi, LanderState::pvsi)
+..................................1.................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 202, listing line 202
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::pvsi = LanderState::vsi
+............1...................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 204, listing line 204
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::pvsi < 0
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 206, listing line 206
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::pvsi = 0
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 209, listing line 209
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::pvsi > 6
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 211, listing line 211
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::pvsi = 6
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 220, listing line 220
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::y > 75
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 222, listing line 222
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LanderState::alt = -1
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 224, listing line 224
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::alt = 6 - ( LanderState::y / 75 * 6 )
+................1........................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 227, listing line 227
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::alt <> LanderState::palt
+...........1...................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 229, listing line 229
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            CALL PROC_UPDTAPE( 50, LanderState::alt, Lander::palt)
+...................................1.................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDER is not a RECORD variable
+ 
+Diagnostic on source line 232, listing line 232
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::palt = LanderState::alt
+............1...................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 234, listing line 234
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::palt < 0
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 239, listing line 239
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::palt > 6
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 241, listing line 241
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::palt = 6
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 277, listing line 277
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::horizThrust = LanderState::la / 90 * LanderState::br / 10 ! horizontal component of lander angle multiplied by burn rate
+............1..........................2......................3 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 3:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 278, listing line 278
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState:vertThrust = ( 1 - ( ABS( LanderState::la ) / 90 ) ) * LanderState::br / 10
+.......................1 
+ 
+%BASIC-E-FOUND, 1:        found ":" when expecting one of:
+                                         "("
+                                         ","
+                                         "="
+                                         "::"
+ 
+Diagnostic on source line 279, listing line 279
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::dt = LanderState::dy - Gravity + LanderState:vertThrust ! vert. speed affected by gravity and vert. thrust
+............1.................2......................................3 
+ 
+%BASIC-E-FOUND, 3:        found ":" when expecting one of:
+                                         a statement modifier
+                                         an operator
+                                         end of statement
+                                         "("
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 280, listing line 280
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::y = LanderState::y + LanderState::dy
+............1................2................3 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 3:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 281, listing line 281
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::dx = LanderState::dx - LanderState::horizThrust
+............1.................2.................3 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 3:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 282, listing line 282
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET LanderState::x = LanderState::x + LanderState::dx
+............1................2................3 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 3:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 285, listing line 285
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::f - LanderState::br < 0
+...........1................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 287, listing line 287
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::br = LanderState::f
+................1.................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 291, listing line 291
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::f > 0
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 293, listing line 293
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+           LET LanderState::f = LanderState::f - LanderState::br
+...............1................2................3 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 3:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 297, listing line 297
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::y < 0
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 299, listing line 299
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::y = 0
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 310, listing line 310
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF C$="]" AND LanderState::br<100
+......................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 312, listing line 312
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::br = LanderState::br + 10
+................1.................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 315, listing line 315
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF C$="[" AND LanderState::br > 0
+......................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 317, listing line 317
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::br = LanderState::br - 10
+................1.................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 320, listing line 320
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF C$="-" AND LanderState::la > -60
+......................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 322, listing line 322
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::la = LanderState::la - 5
+................1.................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 325, listing line 325
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF C$="=" AND LanderState::la < 60
+......................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 327, listing line 327
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::la = LanderState::la + 5
+................1.................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 332, listing line 332
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET GameState::restart = 1
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name GAMESTATE is not a RECORD variable
+ 
+Diagnostic on source line 340, listing line 340
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF C$=";" AND LanderState::br >= 2
+......................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 342, listing line 342
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::br = LanderState::br - 2
+................1.................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 345, listing line 345
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF C$="'" AND LanderState::br <= 98
+......................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 347, listing line 347
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::br = LanderState::br + 2
+................1.................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 352, listing line 352
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::la = 0
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 357, listing line 357
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::la = -60
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 362, listing line 362
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::la = 60
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 367, listing line 367
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::br = 20
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 372, listing line 372
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::br = 40
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 377, listing line 377
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::br = 60
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 382, listing line 382
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::br = 80
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 387, listing line 387
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::br = 100
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 392, listing line 392
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::br = 0
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 412, listing line 412
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            GameState::quit = True
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name GAMESTATE is not a RECORD variable
+ 
+Diagnostic on source line 422, listing line 422
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF Y<=0 AND LanderState::br=0 THEN landed=1: CALL PROC_LANDED
+....................1..............................2 
+ 
+%BASIC-E-FOUND, 2:        found ":" when expecting one of:
+                                         an operator
+                                         end of statement
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 433, listing line 433
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::dx < 0
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 435, listing line 435
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::dx = -LanderState::dx
+................1..................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 438, listing line 438
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::x < 0
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 440, listing line 440
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::x = LanderState::-x
+................1................2............3 
+ 
+%BASIC-E-DELETE, 3:        ignoring "-"
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 445, listing line 445
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::dx <= 6 AND LanderState::dy >= -6
+...........1........................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 450, listing line 450
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::dx < 6 AND LanderState::dy < -3 AND LanderState::dy > -6
+...........1.......................2........................3 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 3:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 455, listing line 455
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::dy < -6 OR LanderState::dx > 6
+...........1.......................2 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 467, listing line 467
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::dy < -6.0
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 469, listing line 469
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            PRINT "You left a crater "; (ABS(LanderState::dy)*2.5); " metres deep"
+.............................................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 472, listing line 472
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::dx = 0.0
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 474, listing line 474
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::dx = 0.1
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 477, listing line 477
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF LanderState::dy = 0.0
+...........1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 479, listing line 479
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            LET LanderState::dy = 0.1
+................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 482, listing line 482
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET GameState::score = 100 / ( ABS( LanderState::dx ) * ABS( LanderState::dy ) )
+............1...............................2........................3 
+ 
+%BASIC-E-NAMNOTREC, 1:        name GAMESTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 3:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 483, listing line 483
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        IF ABS(LanderState::x) < 500 AND ABS(LanderState::dx) < 6.0 AND ABS(LanderState::dy) < 6.0
+...............1.............................2..............................3 
+ 
+%BASIC-E-NAMNOTREC, 1:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 2:        name LANDERSTATE is not a RECORD variable
+%BASIC-E-NAMNOTREC, 3:        name LANDERSTATE is not a RECORD variable
+ 
+Diagnostic on source line 485, listing line 485
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            PRINT "YOUR SCORE IS: "; GameState::score
+.....................................1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name GAMESTATE is not a RECORD variable
+ 
+Diagnostic on source line 493, listing line 493
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        REPEAT T=TIME
+...............1.2 
+ 
+%BASIC-E-DELETE, 1:        ignoring user identifier
+%BASIC-E-TOOFEWARG, 2:        too few arguments
+ 
+Diagnostic on source line 496, listing line 496
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        END SUB
+ 
+%BASIC-E-MISMATFOR,           missing NEXT for UNTIL at listing line 494
+ 
+Diagnostic on source line 504, listing line 504
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        REPEAT
+ 
+%BASIC-E-FOUND,           found end of statement when expecting one of:
+                                         "("
+                                         ","
+                                         "="
+                                         ":"
+                                         "::"
+ 
+Diagnostic on source line 509, listing line 509
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        END SUB
+ 
+%BASIC-E-MISMATFOR,           missing NEXT for UNTIL at listing line 506
+ 
+Diagnostic on source line 522, listing line 522
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        SUB PROC_TAPE(LONG col, LONG min, LONG tick)
+.....................................1 
+ 
+%BASIC-E-FOUND, 1:        found keyword MIN when expecting user identifier
+ 
+Diagnostic on source line 524, listing line 524
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        CALL PRINT_TAB(COL, 0, "-" + min)
+........................................1 
+ 
+%BASIC-E-FOUND, 1:        found ")" when expecting "("
+ 
+Diagnostic on source line 526, listing line 526
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        CALL PRINT_TAB(COL, 2, "-" + (min + tick))
+..........................................1 
+ 
+%BASIC-E-FOUND, 1:        found "+" when expecting "("
+ 
+Diagnostic on source line 528, listing line 528
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        CALL PRINT_TAB(COL, 4, "-" + (min + ( tick * 2 )))
+...................................1..2...3 
+ 
+%BASIC-E-DELETE, 3:        ignoring "+"
+%BASIC-E-ILLMODMIX, 1:        illegal mode mixing
+%BASIC-E-TOOFEWARG, 2:        too few arguments
+ 
+Diagnostic on source line 530, listing line 530
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        CALL PRINT_TAB(COL, 6, "-" + (min + ( tick * 3 )))
+...................................1..2...3 
+ 
+%BASIC-E-DELETE, 3:        ignoring "+"
+%BASIC-E-ILLMODMIX, 1:        illegal mode mixing
+%BASIC-E-TOOFEWARG, 2:        too few arguments
+ 
+Diagnostic on source line 542, listing line 542
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        REPEAT
+ 
+%BASIC-E-FOUND,           found end of statement when expecting one of:
+                                         "("
+                                         ","
+                                         "="
+                                         ":"
+                                         "::"
+ 
+Diagnostic on source line 562, listing line 562
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        END SUB
+ 
+%BASIC-E-MISMATFOR,           missing NEXT for UNTIL at listing line 560
+ 
+Diagnostic on source line 583, listing line 583
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET FIN% = OPENIN(F$)
+..........................1 
+ 
+%BASIC-E-NUMIS_NEE, 1:        numeric expression is required
+ 
+Diagnostic on source line 600, listing line 600
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        REPEAT
+ 
+%BASIC-E-FOUND,           found end of statement when expecting one of:
+                                         "("
+                                         ","
+                                         "="
+                                         ":"
+                                         "::"
+ 
+Diagnostic on source line 601, listing line 601
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            REPEAT
+ 
+%BASIC-E-FOUND,           found end of statement when expecting one of:
+                                         "("
+                                         ","
+                                         "="
+                                         ":"
+                                         "::"
+ 
+Diagnostic on source line 602, listing line 602
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        	LET C% = BGET#I%
+.............................1 
+ 
+%BASIC-E-FOUND, 1:        found "#" when expecting one of:
+                                         a statement modifier
+                                         an operator
+                                         end of statement
+                                         "("
+ 
+Diagnostic on source line 612, listing line 612
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            IF LC% MOD 6=0
+...................1 
+ 
+%BASIC-E-FOUND, 1:        found keyword MOD when expecting one of:
+                                         an operator
+                                         end of statement
+                                         GO
+                                         GOTO
+                                         THEN
+                                         "("
+ 
+Diagnostic on source line 615, listing line 615
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+            END IF
+ 
+%BASIC-E-FOUENDWIT,           found end of IF without matching IF
+ 
+Diagnostic on source line 616, listing line 616
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        UNTIL EOF#I% OR T$="Q" OR T$="q"
+.................1 
+ 
+%BASIC-E-FOUND, 1:        found "#" when expecting one of:
+                                         an operator
+                                         end of statement
+                                         "("
+ 
+Diagnostic on source line 623, listing line 623
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        END SUB
+ 
+%BASIC-E-MISMATFOR,           missing NEXT for UNTIL at listing line 607
+ 
+Diagnostic on source line 630, listing line 630
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        LET GameState::restart = False
+............1 
+ 
+%BASIC-E-NAMNOTREC, 1:        name GAMESTATE is not a RECORD variable
+ 
+Diagnostic on source line 675, listing line 675
+	source file: DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11
+ 
+        
+.........1 
+ 
+%BASIC-E-MULMAIPROG, 1:        multiple main program units are illegal
+ 
+%BASIC-E-ENDNOOBJ, DISK$USERS:[MSW.RC.BASIC]VAXLANDER28G.BAS;11 completed with 176 diagnostics - object deleted
+%DCL-W-SKPDAT, image data (records not beginning with "$") ignored

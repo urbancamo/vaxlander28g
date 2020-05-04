@@ -1,0 +1,36 @@
+!
+!
+!================================================
+SUB SIMLOOP
+
+EXTERNAL SUB CLS
+
+%INCLUDE "CONSTANTS"
+%INCLUDE "RECORDS"
+%INCLUDE "GLOBALS"
+%INCLUDE "EXT$CLS"
+%INCLUDE "EXT$DISPLAY"
+%INCLUDE "EXT$GETKEY"
+%INCLUDE "EXT$UPDSIM"
+%INCLUDE "EXT$TESTLAND"
+%INCLUDE "EXT$DELAY"
+%INCLUDE "EXT$RESTART"
+
+CALL CLS
+
+UNTIL GameState::landed = True OR GameState::quit = True
+    CALL DISPLAY
+    CALL UPDSIM
+    CALL GETKEY
+    CALL TESTLAND
+    CALL DELAY
+
+    IF GameState::restart = True 
+    THEN 
+        CALL RESTART
+    END IF
+
+    LET GameState::st = GameState::st + 1
+NEXT
+
+END SUB
